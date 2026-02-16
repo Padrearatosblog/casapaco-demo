@@ -4,9 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Galería | Casa Paco Gastrobar</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -27,22 +29,33 @@
         <a class="nav__link is-active" href="galeria.html">Galería</a>
         <a class="btn" href="index.html#reservas">Reservar</a>
       </nav>
+
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile" id="mobileMenu">
+      <a href="index.html">Inicio</a>
+      <a href="carta.html">Carta</a>
+      <a href="galeria.html">Galería</a>
+      <a class="btn btn--primary" href="index.html#reservas">Reservar</a>
     </div>
   </header>
 
   <section class="pagehead">
     <div class="container">
       <h1>Galería</h1>
-      <p>Ambiente cálido, platos y detalles. (Demo)</p>
+      <p>Ambiente, platos y detalles. (Demo)</p>
     </div>
   </section>
 
   <main class="section">
     <div class="container">
       <div class="gallery">
+        <img src="img/hero.png" alt="Casa Paco - Hero" loading="lazy">
         <img src="img/collage-1.png" alt="Casa Paco - Ambiente y platos" loading="lazy">
         <img src="img/collage-2.png" alt="Casa Paco - Experiencia" loading="lazy">
-        <img src="img/hero.png" alt="Casa Paco - Mesa" loading="lazy">
         <img src="img/collage-1.png" alt="Casa Paco - Detalles" loading="lazy">
         <img src="img/collage-2.png" alt="Casa Paco - Vino" loading="lazy">
         <img src="img/hero.png" alt="Casa Paco - Local" loading="lazy">

@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Casa Paco Gastrobar | Pamplona</title>
   <meta name="description" content="Producto tradicional y de temporada en el corazón de Pamplona. Reserva en Casa Paco Gastrobar." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -17,7 +19,7 @@
     <div class="container topbar__inner">
       <div class="topbar__left">
         <span class="chip">📍 Rincón de San Nicolás 1, Pamplona</span>
-        <span class="chip">☎️ Reservas: <a href="tel:+34948598074">948 59 80 74</a></span>
+        <span class="chip">☎️ <a href="tel:+34948598074">948 59 80 74</a></span>
       </div>
       <div class="topbar__right">
         <a class="link" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noreferrer">Instagram</a>
@@ -45,7 +47,7 @@
         <a class="btn" href="#reservas">Reservar</a>
       </nav>
 
-      <button class="burger" id="burger" aria-label="Abrir menú">
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -55,19 +57,22 @@
       <a href="carta.html">Carta</a>
       <a href="galeria.html">Galería</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn" href="#reservas">Reservar</a>
+      <a class="btn btn--primary" href="#reservas">Reservar</a>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero__bg" style="background-image:url('img/hero.jpg')"></div>
+    <div class="hero__bg" style="background-image:url('img/hero.png')"></div>
     <div class="hero__overlay"></div>
+
     <div class="container hero__content">
       <p class="eyebrow">Local emblemático · producto tradicional y de temporada</p>
-      <h1>Cocina navarra con alma, <br/>en el corazón de Pamplona.</h1>
+
+      <h1>Cocina navarra con alma,<br>en el centro de Pamplona.</h1>
+
       <p class="lead">
-        Un espacio cálido, clásico y elegante para disfrutar de los sabores de siempre,
+        Un espacio cálido y elegante para disfrutar de los sabores de siempre,
         bien hechos y con buen producto.
       </p>
 
@@ -97,62 +102,60 @@
         <article class="card">
           <h3>Picoteo & clásicos</h3>
           <p>Bravas, rabas, chopitos, pimientos, jamón… lo de siempre, bien hecho.</p>
-          <a class="link" href="carta.html">Ver secciones →</a>
+          <a class="link link--arrow" href="carta.html">Ver secciones</a>
         </article>
 
         <article class="card">
           <h3>Platos principales</h3>
-          <p>Cuchara, carnes, pescados y guisos con sabor a casa y buena materia prima.</p>
-          <a class="link" href="carta.html">Ver platos →</a>
+          <p>Carnes, pescados y guisos con sabor a casa y buena materia prima.</p>
+          <a class="link link--arrow" href="carta.html">Ver platos</a>
         </article>
 
         <article class="card">
           <h3>Postres</h3>
           <p>Final dulce: tarta de queso, coulant, torrija brioche y más.</p>
-          <a class="link" href="carta.html#postres">Ver postres →</a>
+          <a class="link link--arrow" href="carta.html#postres">Ver postres</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Image band -->
+  <!-- Band -->
   <section class="band">
     <div class="container band__inner">
       <div class="band__text">
         <h2>Un ambiente cálido, para venir sin prisa</h2>
-        <p>
-          Madera, luz suave y una atención cercana.
-          Ideal para comidas, cenas, grupos y celebraciones.
-        </p>
+        <p>Madera, luz suave y atención cercana. Ideal para comidas, cenas y celebraciones.</p>
         <div class="band__actions">
           <a class="btn" href="galeria.html">Ver galería</a>
           <a class="btn btn--ghost" href="#contacto">Cómo llegar</a>
         </div>
       </div>
+
       <div class="band__media">
         <img src="img/collage-1.png" alt="Ambiente y platos Casa Paco" loading="lazy">
       </div>
     </div>
   </section>
 
-  <!-- Menu teaser -->
+  <!-- Split -->
   <section class="section section--alt">
     <div class="container">
       <div class="split">
         <div class="split__media">
           <img src="img/collage-2.png" alt="Platos y experiencia Casa Paco" loading="lazy">
         </div>
+
         <div class="split__text">
           <h2>Carta clara, fácil de elegir</h2>
-          <p>
-            En la demo dejamos una carta maquetada y lista para actualizar.
-            Luego la ajustamos con tu carta final y precios definitivos.
-          </p>
+          <p>En esta demo la carta está maquetada para que el cliente la entienda de un vistazo.</p>
+
           <ul class="ticks">
             <li>Secciones ordenadas</li>
-            <li>Raciones / platos / bocadillos / postres</li>
+            <li>Platos/raciones/bocadillos/postres</li>
             <li>Botón de reserva siempre visible</li>
           </ul>
+
           <a class="btn btn--primary" href="carta.html">Ver carta</a>
         </div>
       </div>
@@ -170,12 +173,8 @@
       <div class="grid grid--2">
         <div class="card card--padded">
           <h3>Reservas</h3>
-          <p class="big">
-            ☎️ <a href="tel:+34948598074">948 59 80 74</a>
-          </p>
-          <p>
-            📍 Rincón de San Nicolás 1, Pamplona (31001)
-          </p>
+          <p class="big">☎️ <a href="tel:+34948598074">948 59 80 74</a></p>
+          <p>📍 Rincón de San Nicolás 1, Pamplona (31001)</p>
 
           <div class="actions">
             <a class="btn btn--primary" href="tel:+34948598074">Llamar</a>
@@ -183,57 +182,23 @@
             <a class="btn btn--ghost" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noreferrer">Instagram</a>
           </div>
 
-<div class="hours">
-  <h4>Horario</h4>
+          <!-- Horario elegante (mobile perfecto) -->
+          <div class="hours">
+            <h4>Horario</h4>
 
-  <div class="hours-list">
-    <div class="hrow">
-      <span class="hday">Lunes</span>
-      <span class="hdots" aria-hidden="true"></span>
-      <span class="htime">10:00–17:00</span>
-    </div>
+            <div class="hours-list">
+              <div class="hrow"><span class="hday">Lunes</span><span class="htime">10:00–17:00</span></div>
+              <div class="hrow"><span class="hday">Martes</span><span class="htime">10:00–17:00</span></div>
+              <div class="hrow"><span class="hday">Miércoles</span><span class="htime">10:00–23:00</span></div>
+              <div class="hrow"><span class="hday">Jueves</span><span class="htime">10:00–23:30</span></div>
+              <div class="hrow"><span class="hday">Viernes</span><span class="htime">10:00–00:00</span></div>
+              <div class="hrow"><span class="hday">Sábado</span><span class="htime">10:00–00:00</span></div>
+              <div class="hrow"><span class="hday">Domingo</span><span class="htime">11:00–17:00</span></div>
+            </div>
 
-    <div class="hrow">
-      <span class="hday">Martes</span>
-      <span class="hdots" aria-hidden="true"></span>
-      <span class="htime">10:00–17:00</span>
-    </div>
-
-    <div class="hrow">
-      <span class="hday">Miércoles</span>
-      <span class="hdots" aria-hidden="true"></span>
-      <span class="htime">10:00–23:00</span>
-    </div>
-
-    <div class="hrow">
-      <span class="hday">Jueves</span>
-      <span class="hdots" aria-hidden="true"></span>
-      <span class="htime">10:00–23:30</span>
-    </div>
-
-    <div class="hrow">
-      <span class="hday">Viernes</span>
-      <span class="hdots" aria-hidden="true"></span>
-      <span class="htime">10:00–00:00</span>
-    </div>
-
-    <div class="hrow">
-      <span class="hday">Sábado</span>
-      <span class="hdots" aria-hidden="true"></span>
-      <span class="htime">10:00–00:00</span>
-    </div>
-
-    <div class="hrow">
-      <span class="hday">Domingo</span>
-      <span class="hdots" aria-hidden="true"></span>
-      <span class="htime">11:00–17:00</span>
-    </div>
-  </div>
-
-  <p class="hours-note">* Horario sujeto a cambios en festivos y eventos.</p>
-</div>
-
-
+            <p class="hours-note">* Horario sujeto a cambios en festivos y eventos.</p>
+          </div>
+        </div>
 
         <div class="card card--map">
           <iframe

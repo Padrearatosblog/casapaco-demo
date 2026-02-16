@@ -4,9 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Carta | Casa Paco Gastrobar</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -21,66 +23,71 @@
         </div>
       </a>
 
-      <nav class="nav" aria-label="Navegación principal">
+      <nav class="nav">
         <a class="nav__link" href="index.html">Inicio</a>
         <a class="nav__link is-active" href="carta.html">Carta</a>
         <a class="nav__link" href="galeria.html">Galería</a>
         <a class="btn" href="index.html#reservas">Reservar</a>
       </nav>
+
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile" id="mobileMenu">
+      <a href="index.html">Inicio</a>
+      <a href="carta.html">Carta</a>
+      <a href="galeria.html">Galería</a>
+      <a class="btn btn--primary" href="index.html#reservas">Reservar</a>
     </div>
   </header>
 
   <section class="pagehead">
     <div class="container">
       <h1>La Carta</h1>
-      <p>Versión demo: luego la ajustamos con la carta final y precios definitivos.</p>
+      <p>Versión demo: la ajustamos con la carta final y precios definitivos.</p>
     </div>
   </section>
 
   <main class="section">
     <div class="container">
       <div class="menu">
+
         <section class="menu__block">
           <h2>Picoteo y clásicos</h2>
           <div class="menu__items">
             <div class="item"><div><strong>Bravas</strong><span>Con nuestra salsa</span></div><div class="price">9€</div></div>
             <div class="item"><div><strong>Rabas</strong><span>Con ralladura de lima</span></div><div class="price">11€</div></div>
             <div class="item"><div><strong>Chopitos</strong><span>Con pimientos de padrón</span></div><div class="price">10€</div></div>
-            <div class="item"><div><strong>Padrón</strong><span>Con escamas de sal</span></div><div class="price">8€</div></div>
-            <div class="item"><div><strong>Jamón ibérico</strong><span>Con tostiones y AOVE</span></div><div class="price">20€</div></div>
           </div>
         </section>
 
         <section class="menu__block">
           <h2>Platos principales</h2>
           <div class="menu__items">
-            <div class="item"><div><strong>Lecbezuelas</strong><span>Encebolladas</span></div><div class="price">22€</div></div>
             <div class="item"><div><strong>Callos</strong><span>Al estilo tradicional</span></div><div class="price">17€</div></div>
             <div class="item"><div><strong>Rabo estofado</strong><span>Nuestra especialidad</span></div><div class="price">20€</div></div>
             <div class="item"><div><strong>Entrecot de vaca</strong><span>Con padrón y patatas</span></div><div class="price">20€</div></div>
-            <div class="item"><div><strong>Pescado fresco del día</strong><span>A consultar</span></div><div class="price">17€</div></div>
           </div>
         </section>
 
         <section class="menu__block">
           <h2>Bocadillos</h2>
           <div class="menu__items">
-            <div class="item"><div><strong>Tortilla al gusto</strong><span>Jamón, queso, chistorra, etc.</span></div><div class="price">8€</div></div>
-            <div class="item"><div><strong>Verduras a la brasa</strong><span>Con queso brie</span></div><div class="price">8€</div></div>
-            <div class="item"><div><strong>Panceta adobada</strong><span>Con queso y pimiento verde</span></div><div class="price">9€</div></div>
-            <div class="item"><div><strong>Pechuga de pollo</strong><span>Con queso, alioli y piquillos</span></div><div class="price">9€</div></div>
+            <div class="item"><div><strong>Tortilla al gusto</strong><span>Jamón, queso, chistorra…</span></div><div class="price">8€</div></div>
+            <div class="item"><div><strong>Pechuga de pollo</strong><span>Queso, alioli y piquillos</span></div><div class="price">9€</div></div>
           </div>
         </section>
 
         <section class="menu__block" id="postres">
           <h2>Postres</h2>
           <div class="menu__items">
-            <div class="item"><div><strong>Torrija brioche</strong><span>Con helado de galleta</span></div><div class="price">6,50€</div></div>
+            <div class="item"><div><strong>Torrija brioche</strong><span>Con helado</span></div><div class="price">6,50€</div></div>
             <div class="item"><div><strong>Coulant</strong><span>Con helado</span></div><div class="price">6,50€</div></div>
-            <div class="item"><div><strong>Cremoso de tarta de queso</strong><span>Con frutos rojos</span></div><div class="price">4€</div></div>
-            <div class="item"><div><strong>Sorbete del día</strong><span>Según temporada</span></div><div class="price">4€</div></div>
           </div>
         </section>
+
       </div>
 
       <div class="cta-strip">
