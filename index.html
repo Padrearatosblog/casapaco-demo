@@ -12,7 +12,9 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-
+<a class="reserve-float" href="tel:+34948598074" aria-label="Reservar en Casa Paco">
+  <span>Reservar</span>
+</a>
 <body>
   <!-- Topbar -->
   <div class="topbar">
@@ -23,10 +25,7 @@
       </div>
       <div class="topbar__right">
         <a class="link" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noreferrer">Instagram</a>
-        <a class="btn btn--small" id="btnWhatsTop" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
-      </div>
-    </div>
-  </div>
+        <a class="btn btn--primary" href="tel:+34948598074">Reservar</a>
 
   <!-- Header -->
   <header class="header">
@@ -41,10 +40,10 @@
 
       <nav class="nav" aria-label="Navegación principal">
         <a class="nav__link is-active" href="index.html">Inicio</a>
-        <a class="nav__link" href="carta.html">Carta</a>
+        <a class="nav__link" href="carta.html">Carta y menús</a>
         <a class="nav__link" href="galeria.html">Galería</a>
         <a class="nav__link" href="#contacto">Contacto</a>
-        <a class="btn" href="#reservas">Reservar</a>
+        <a class="btn" href="carta.html#menus">Ver menús</a>
       </nav>
 
       <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
@@ -54,10 +53,10 @@
 
     <div class="mobile" id="mobileMenu">
       <a href="index.html">Inicio</a>
-      <a href="carta.html">Carta</a>
+      <a href="carta.html">Carta y menús</a>
       <a href="galeria.html">Galería</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn btn--primary" href="#reservas">Reservar</a>
+      <a class="btn btn--primary" href="carta.html#menus">Ver menús</a>
     </div>
   </header>
 
@@ -76,11 +75,10 @@
         bien hechos y con buen producto.
       </p>
 
-      <div class="hero__cta" id="reservas">
-        <a class="btn btn--primary" href="carta.html">Ver carta</a>
-        <a class="btn btn--ghost" href="tel:+34948598074">Llamar</a>
-        <a class="btn btn--ghost" id="btnWhatsHero" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
-      </div>
+      <div class="hero__cta">
+        <a class="btn btn--ghost" href="carta.html">Ver carta</a>
+        <a class="btn btn--ghost" href="carta.html#menus">Ver menús</a>
+       <a class="btn btn--ghost" href="tel:+34948598074">Reservar</a>
 
       <div class="hero__badges">
         <div class="badge">🍷 Vinos y sobremesa</div>
@@ -95,26 +93,26 @@
     <div class="container">
       <div class="section__head">
         <h2>Lo que encontrarás</h2>
-        <p>Una carta pensada para compartir, con platos tradicionales y el toque de temporada.</p>
+        <p>Una carta clara y menús visibles (imagen + PDF) para elegir rápido.</p>
       </div>
 
       <div class="grid grid--3">
         <article class="card">
-          <h3>Picoteo & clásicos</h3>
-          <p>Bravas, rabas, chopitos, pimientos, jamón… lo de siempre, bien hecho.</p>
-          <a class="link link--arrow" href="carta.html">Ver secciones</a>
+          <h3>Menú del día</h3>
+          <p>Imagen para verlo al momento + PDF para descargar.</p>
+          <a class="link link--arrow" href="carta.html#menu-dia">Ver menú</a>
         </article>
 
         <article class="card">
-          <h3>Platos principales</h3>
-          <p>Carnes, pescados y guisos con sabor a casa y buena materia prima.</p>
-          <a class="link link--arrow" href="carta.html">Ver platos</a>
+          <h3>Menú fin de semana</h3>
+          <p>Presentación premium y fácil para el cliente.</p>
+          <a class="link link--arrow" href="carta.html#menu-fin">Ver menú</a>
         </article>
 
         <article class="card">
-          <h3>Postres</h3>
-          <p>Final dulce: tarta de queso, coulant, torrija brioche y más.</p>
-          <a class="link link--arrow" href="carta.html#postres">Ver postres</a>
+          <h3>Carta completa</h3>
+          <p>Todo en una sola carta, limpia y entendible.</p>
+          <a class="link link--arrow" href="carta.html#carta">Ver carta</a>
         </article>
       </div>
     </div>
@@ -138,36 +136,12 @@
     </div>
   </section>
 
-  <!-- Split -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="split">
-        <div class="split__media">
-          <img src="img/collage-2.png" alt="Platos y experiencia Casa Paco" loading="lazy">
-        </div>
-
-        <div class="split__text">
-          <h2>Carta clara, fácil de elegir</h2>
-          <p>En esta demo la carta está maquetada para que el cliente la entienda de un vistazo.</p>
-
-          <ul class="ticks">
-            <li>Secciones ordenadas</li>
-            <li>Platos/raciones/bocadillos/postres</li>
-            <li>Botón de reserva siempre visible</li>
-          </ul>
-
-          <a class="btn btn--primary" href="carta.html">Ver carta</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Contact -->
   <section class="section" id="contacto">
     <div class="container">
       <div class="section__head">
         <h2>Contacto</h2>
-        <p>Reservas por teléfono o WhatsApp. Estamos en pleno centro.</p>
+        <p>Reservas por teléfono. Estamos en pleno centro.</p>
       </div>
 
       <div class="grid grid--2">
@@ -178,14 +152,12 @@
 
           <div class="actions">
             <a class="btn btn--primary" href="tel:+34948598074">Llamar</a>
-            <a class="btn" id="btnWhatsContact" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
+           <a class="btn btn--primary" href="tel:+34948598074">Reservar</a>
             <a class="btn btn--ghost" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noreferrer">Instagram</a>
           </div>
 
-          <!-- Horario elegante (mobile perfecto) -->
           <div class="hours">
             <h4>Horario</h4>
-
             <div class="hours-list">
               <div class="hrow"><span class="hday">Lunes</span><span class="htime">10:00–17:00</span></div>
               <div class="hrow"><span class="hday">Martes</span><span class="htime">10:00–17:00</span></div>
@@ -195,7 +167,6 @@
               <div class="hrow"><span class="hday">Sábado</span><span class="htime">10:00–00:00</span></div>
               <div class="hrow"><span class="hday">Domingo</span><span class="htime">11:00–17:00</span></div>
             </div>
-
             <p class="hours-note">* Horario sujeto a cambios en festivos y eventos.</p>
           </div>
         </div>
@@ -205,7 +176,8 @@
             title="Mapa Casa Paco"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Rinc%C3%B3n%20de%20San%20Nicol%C3%A1s%201%2C%20Pamplona&output=embed">
+            src="https://www.google.com/maps/dir//Restaurante+Casa+Paco,+Rincón+de+San+Nicolás,+1,+31001+Pamplona,+Navarra/"
+            allowfullscreen>
           </iframe>
         </div>
       </div>
@@ -219,12 +191,13 @@
         <div class="muted">Producto tradicional y de temporada · Pamplona</div>
       </div>
       <div class="footer__links">
-        <a href="carta.html">Carta</a>
+        <a href="carta.html">Carta y menús</a>
         <a href="galeria.html">Galería</a>
         <a href="#contacto">Contacto</a>
       </div>
     </div>
   </footer>
+
 
   <script src="js/main.js"></script>
 </body>

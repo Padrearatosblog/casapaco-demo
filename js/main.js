@@ -1,14 +1,4 @@
-// Casa Paco demo - JS mínimo (WhatsApp + menú móvil)
-const PHONE_E164 = "34948598074"; // +34 948 59 80 74 (sin +)
-const WA_TEXT = encodeURIComponent("Hola Casa Paco, me gustaría reservar. ¿Tienen disponibilidad?");
-const waLink = `https://wa.me/${PHONE_E164}?text=${WA_TEXT}`;
-
-["btnWhatsTop","btnWhatsHero","btnWhatsContact","btnWhatsCarta","btnWhatsGaleria"].forEach(id=>{
-  const el = document.getElementById(id);
-  if(el) el.href = waLink;
-});
-
-// Menú móvil (abre/cierra)
+// Casa Paco demo - JS mínimo (menú móvil)
 const burger = document.getElementById("burger");
 const mobile = document.getElementById("mobileMenu");
 

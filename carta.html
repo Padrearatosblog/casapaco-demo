@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Carta | Casa Paco Gastrobar</title>
+  <title>Carta y Menús | Casa Paco Gastrobar</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,9 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+<a class="reserve-float" href="tel:+34948598074" aria-label="Reservar en Casa Paco">
+  <span>Reservar</span>
+</a>
 <body>
 
   <header class="header header--plain">
@@ -25,9 +28,9 @@
 
       <nav class="nav">
         <a class="nav__link" href="index.html">Inicio</a>
-        <a class="nav__link is-active" href="carta.html">Carta</a>
+        <a class="nav__link is-active" href="carta.html">Carta y menús</a>
         <a class="nav__link" href="galeria.html">Galería</a>
-        <a class="btn" href="index.html#reservas">Reservar</a>
+        <a class="btn" href="index.html#contacto">Contacto</a>
       </nav>
 
       <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
@@ -37,69 +40,86 @@
 
     <div class="mobile" id="mobileMenu">
       <a href="index.html">Inicio</a>
-      <a href="carta.html">Carta</a>
+      <a href="carta.html">Carta y menús</a>
       <a href="galeria.html">Galería</a>
-      <a class="btn btn--primary" href="index.html#reservas">Reservar</a>
+      <a class="btn btn--primary" href="index.html#contacto">Contacto</a>
     </div>
   </header>
 
   <section class="pagehead">
     <div class="container">
-      <h1>La Carta</h1>
-      <p>Versión demo: la ajustamos con la carta final y precios definitivos.</p>
+      <h1>Carta y Menús</h1>
+      <p>Menú del día, fin de semana y carta completa (foto + PDF).</p>
     </div>
   </section>
 
-  <main class="section">
+  <main class="section" id="menus">
     <div class="container">
-      <div class="menu">
 
-        <section class="menu__block">
-          <h2>Picoteo y clásicos</h2>
-          <div class="menu__items">
-            <div class="item"><div><strong>Bravas</strong><span>Con nuestra salsa</span></div><div class="price">9€</div></div>
-            <div class="item"><div><strong>Rabas</strong><span>Con ralladura de lima</span></div><div class="price">11€</div></div>
-            <div class="item"><div><strong>Chopitos</strong><span>Con pimientos de padrón</span></div><div class="price">10€</div></div>
+      <!-- MENU DEL DÍA -->
+      <section class="sheet" id="menu-dia">
+        <div class="sheet__head">
+          <h2>Menú del día</h2>
+          <div class="sheet__actions">
+            <a class="btn btn--primary" href="pdf/menu-dia.pdf" target="_blank" rel="noreferrer">Ver PDF</a>
+            <a class="btn" href="pdf/menu-dia.pdf" download>Descargar</a>
           </div>
-        </section>
+        </div>
 
-        <section class="menu__block">
-          <h2>Platos principales</h2>
-          <div class="menu__items">
-            <div class="item"><div><strong>Callos</strong><span>Al estilo tradicional</span></div><div class="price">17€</div></div>
-            <div class="item"><div><strong>Rabo estofado</strong><span>Nuestra especialidad</span></div><div class="price">20€</div></div>
-            <div class="item"><div><strong>Entrecot de vaca</strong><span>Con padrón y patatas</span></div><div class="price">20€</div></div>
+        <div class="sheet__media">
+          <img src="img/menu-dia.jpg" alt="Menú del día Casa Paco" loading="lazy">
+        </div>
+      </section>
+
+      <!-- MENU FIN DE SEMANA -->
+      <section class="sheet" id="menu-fin">
+        <div class="sheet__head">
+          <h2>Menú fin de semana</h2>
+          <div class="sheet__actions">
+            <a class="btn btn--primary" href="pdf/menu-fin-semana.pdf" target="_blank" rel="noreferrer">Ver PDF</a>
+            <a class="btn" href="pdf/menu-fin-semana.pdf" download>Descargar</a>
           </div>
-        </section>
+        </div>
 
-        <section class="menu__block">
-          <h2>Bocadillos</h2>
-          <div class="menu__items">
-            <div class="item"><div><strong>Tortilla al gusto</strong><span>Jamón, queso, chistorra…</span></div><div class="price">8€</div></div>
-            <div class="item"><div><strong>Pechuga de pollo</strong><span>Queso, alioli y piquillos</span></div><div class="price">9€</div></div>
+        <div class="sheet__media">
+          <img src="img/menu-fin-semana.jpg" alt="Menú fin de semana Casa Paco" loading="lazy">
+        </div>
+      </section>
+
+      <!-- CARTA COMPLETA -->
+      <section class="sheet" id="carta">
+        <div class="sheet__head">
+          <h2>Carta completa</h2>
+          <div class="sheet__actions">
+            <a class="btn btn--primary" href="pdf/carta.pdf" target="_blank" rel="noreferrer">Ver PDF</a>
+            <a class="btn" href="pdf/carta.pdf" download>Descargar</a>
           </div>
-        </section>
+        </div>
 
-        <section class="menu__block" id="postres">
-          <h2>Postres</h2>
-          <div class="menu__items">
-            <div class="item"><div><strong>Torrija brioche</strong><span>Con helado</span></div><div class="price">6,50€</div></div>
-            <div class="item"><div><strong>Coulant</strong><span>Con helado</span></div><div class="price">6,50€</div></div>
-          </div>
-        </section>
+        <div class="pdf-embed">
+          <iframe
+            title="Carta Casa Paco"
+            src="pdf/carta.pdf"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+          ></iframe>
+        </div>
 
-      </div>
+        <p class="hint">
+          Si el móvil no muestra el PDF incrustado, usa “Ver PDF”.
+        </p>
+      </section>
 
       <div class="cta-strip">
         <div>
           <h3>¿Reservamos?</h3>
-          <p>Teléfono directo o WhatsApp.</p>
+          <p>Teléfono directo.</p>
         </div>
         <div class="cta-strip__actions">
-          <a class="btn btn--primary" href="tel:+34948598074">Llamar</a>
-          <a class="btn" id="btnWhatsCarta" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="btn btn--primary" href="tel:+34948598074">Reservar</a>
         </div>
       </div>
+
     </div>
   </main>
 
@@ -109,6 +129,7 @@
       <div class="footer__links"><a href="index.html">Inicio</a><a href="galeria.html">Galería</a></div>
     </div>
   </footer>
+
 
   <script src="js/main.js"></script>
 </body>
