@@ -489,3 +489,46 @@ body{
   .card--preview img{height:420px}
   .cta-strip{flex-direction:row;align-items:center;justify-content:space-between}
 }
+
+.footer__credit{
+  display:flex;
+  gap:6px;
+  align-items:center;
+  font-size:.9rem;
+  opacity:.9;
+}
+
+.credit-link{
+  color:rgba(255,255,255,.9);
+  text-decoration:none;
+  font-weight:700;
+  border-bottom:1px solid rgba(255,255,255,.25);
+}
+
+.credit-link:hover{
+  border-bottom-color:rgba(255,255,255,.6);
+}
+
+.footer__brand{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.footer__credit{
+  font-size:.9rem;
+  opacity:.85;
+  display:flex;
+  gap:6px;
+  align-items:center;
+}
+
+.credit-link{
+  text-decoration:none;
+  color:rgba(255,255,255,.9);
+  font-weight:700;
+}
+
+.credit-link:hover{
+  opacity:1;
+}
