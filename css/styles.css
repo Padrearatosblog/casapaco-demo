@@ -532,3 +532,53 @@ body{
 .credit-link:hover{
   opacity:1;
 }
+
+@media (max-width: 600px){
+
+  .topbar__inner{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+  }
+
+  .chip{
+    font-size:0.8rem;
+    padding:6px 10px;
+  }
+
+}
+
+@media (max-width: 600px){
+
+  .hero__cta{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .hero__cta .btn{
+    width:100%;
+  }
+
+}
+
+@media (max-width: 600px){
+
+  .hero h1{
+    font-size:1.8rem;
+    line-height:1.2;
+  }
+
+  .lead{
+    font-size:0.95rem;
+  }
+
+}
+
+@media (max-width: 600px){
+
+  .hero__badges{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+}
