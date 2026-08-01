@@ -3,14 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Casa Paco Gastrobar | Pamplona</title>
-  <meta name="description" content="Casa Paco Gastrobar en Pamplona. Cocina navarra con alma, carta, menú del día y fin de semana. Reservas por teléfono." />
+  <title>Casa Paco | Restaurante de cocina navarra en Pamplona</title>
+  <meta name="description" content="Restaurante Casa Paco en el centro de Pamplona: cocina navarra, producto de temporada, menú del día y menú de fin de semana. Consulta la carta y reserva mesa." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Casa Paco Gastrobar" />
+  <meta name="theme-color" content="#24170f" />
+  <link rel="canonical" href="https://casapacopamplona.com/" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Casa Paco | Cocina navarra en el centro de Pamplona" />
+  <meta property="og:description" content="Sabores de siempre, producto de temporada y un ambiente acogedor. Descubre nuestra carta y reserva tu mesa." />
+  <meta property="og:url" content="https://casapacopamplona.com/" />
+  <meta property="og:site_name" content="Casa Paco Gastrobar" />
+  <meta property="og:image" content="https://casapacopamplona.com/img/hero.png" />
+  <meta property="og:image:alt" content="Casa Paco, restaurante de cocina navarra en Pamplona" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="img/logo.png" type="image/png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Casa Paco Gastrobar",
+    "url": "https://casapacopamplona.com/",
+    "image": "https://casapacopamplona.com/img/hero.png",
+    "logo": "https://casapacopamplona.com/img/logo.png",
+    "telephone": "+34948598074",
+    "servesCuisine": ["Cocina navarra", "Cocina española", "Cocina tradicional"],
+    "priceRange": "€€",
+    "address": {"@type":"PostalAddress","streetAddress":"Rincón de San Nicolás 1","postalCode":"31001","addressLocality":"Pamplona","addressRegion":"Navarra","addressCountry":"ES"},
+    "sameAs": ["https://www.instagram.com/casapacogastrobar/"],
+    "hasMenu": "https://casapacopamplona.com/pdf/Casa_Paco_Carta_y_Menus.pdf"
+  }
+  </script>
 </head>
 
 <body>
@@ -18,12 +48,21 @@
   <div class="topbar">
     <div class="container topbar__inner">
       <div class="topbar__left">
-        <span class="chip">📍 Rincón de San Nicolás 1, Pamplona</span>
-        <span class="chip">☎️ <a href="tel:+34948598074">948 59 80 74</a></span>
+        <a class="topbar-action topbar-action--location" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rinc%C3%B3n%20de%20San%20Nicol%C3%A1s%201%2C%2031001%20Pamplona%2C%20Navarra" target="_blank" rel="noopener noreferrer" aria-label="Cómo llegar a Casa Paco con Google Maps">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 22s7-6.1 7-13a7 7 0 1 0-14 0c0 6.9 7 13 7 13Zm0-10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>
+          <span><small>Cómo llegar</small><strong>Rincón de San Nicolás 1</strong></span>
+          <span class="topbar-action__arrow" aria-hidden="true">↗</span>
+        </a>
       </div>
       <div class="topbar__right">
-        <a class="link" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noreferrer">Instagram</a>
-        <a class="btn btn--small btn--call" href="tel:+34948598074">Llamar</a>
+        <a class="topbar-action" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noopener noreferrer" aria-label="Seguir a Casa Paco en Instagram">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1" class="icon-fill"/></svg>
+          <span><small>Síguenos</small><strong>@casapacogastrobar</strong></span>
+        </a>
+        <a class="topbar-action topbar-action--phone" href="tel:+34948598074" aria-label="Llamar a Casa Paco">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.2 3.5 10 7.8 8.3 10c1.1 2.2 2.9 4 5.1 5.1l2.2-1.7 4.3 2.8-.9 3.9c-.2.8-1 1.4-1.9 1.3C9.5 20.5 3.5 14.5 2.6 6.9c-.1-.9.5-1.7 1.3-1.9l3.3-.8Z"/></svg>
+          <span><small>Reservas</small><strong>948 59 80 74</strong></span>
+        </a>
       </div>
     </div>
   </div>
@@ -41,25 +80,23 @@
 
       <nav class="nav" aria-label="Navegación principal">
         <a class="nav__link is-active" href="#inicio">Inicio</a>
-        <a class="nav__link" href="#carta">Carta</a>
         <a class="nav__link" href="#menus">Menús</a>
-        <a class="nav__link" href="#sanfermin">San Fermín</a>
+        <a class="nav__link" href="#carta">Carta</a>
         <a class="nav__link" href="#galeria">Galería</a>
         <a class="nav__link" href="#resenas">Reseñas</a>
         <a class="nav__link" href="#contacto">Contacto</a>
         <a class="btn btn--reserve" href="tel:+34948598074">Reservar</a>
       </nav>
 
-      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
 
     <div class="mobile" id="mobileMenu">
       <a href="#inicio">Inicio</a>
-      <a href="#carta">Carta</a>
       <a href="#menus">Menús</a>
-      <a href="#sanfermin">San Fermín</a>
+      <a href="#carta">Carta</a>
       <a href="#galeria">Galería</a>
       <a href="#resenas">Reseñas</a>
       <a href="#contacto">Contacto</a>
@@ -73,18 +110,18 @@
     <div class="hero__overlay"></div>
 
     <div class="container hero__content">
-      <p class="eyebrow">Local emblemático · producto tradicional y de temporada</p>
+      <p class="eyebrow">Restaurante en el centro de Pamplona · Producto local y de temporada</p>
 
       <h1>Cocina navarra con alma,<br>en el centro de Pamplona.</h1>
 
       <p class="lead">
-        Sabores de siempre, producto de temporada y proveedores de confianza, en un espacio cálido y elegante.
+        Disfruta de cocina navarra tradicional, menús cuidados y producto de temporada en un espacio cálido junto a San Nicolás.
       </p>
 
       <div class="hero__cta">
         <a class="btn btn--reserve btn--glow" href="tel:+34948598074">Reservar</a>
-        <a class="btn btn--ghost btn--strong" href="#carta">Ver carta</a>
         <a class="btn btn--ghost btn--strong" href="#menus">Ver menús</a>
+        <a class="btn btn--ghost btn--strong" href="#carta">Ver carta</a>
       </div>
 
       <div class="hero__badges">
@@ -99,27 +136,31 @@
   <section class="section">
     <div class="container">
       <div class="section__head">
-        <h2>Lo que encontrarás</h2>
-        <p>Carta clara y menús visibles para elegir rápido.</p>
+        <span class="section__kicker">Sabores de Navarra</span>
+        <h2>Una mesa para disfrutar Pamplona</h2>
+        <p>Dos menús bien definidos y una carta de cocina navarra para elegir con claridad.</p>
       </div>
 
       <div class="grid grid--3">
         <article class="card">
-          <h3>Carta</h3>
-          <p>La carta completa en PDF, lista para móvil o imprimir.</p>
-          <a class="link link--arrow" href="#carta">Abrir carta</a>
-        </article>
-
-        <article class="card">
+          <span class="card__number">01</span>
           <h3>Menú del día</h3>
-          <p>Imagen para verlo al momento + PDF para descargar.</p>
+          <p>Una propuesta completa y cuidada para comer bien entre semana.</p>
           <a class="link link--arrow" href="#menus">Ver menú del día</a>
         </article>
 
         <article class="card">
-          <h3>San Fermín</h3>
-          <p>Almuerzo especial (imagen). Reserva con un clic.</p>
-          <a class="link link--arrow" href="#sanfermin">Ver almuerzo</a>
+          <span class="card__number">02</span>
+          <h3>Fin de semana</h3>
+          <p>Una experiencia más pausada para compartir y disfrutar la sobremesa.</p>
+          <a class="link link--arrow" href="#menus">Ver menú de fin de semana</a>
+        </article>
+
+        <article class="card">
+          <span class="card__number">03</span>
+          <h3>Nuestra carta</h3>
+          <p>Platos tradicionales, raciones y propuestas de temporada para compartir.</p>
+          <a class="link link--arrow" href="#carta">Abrir carta</a>
         </article>
       </div>
     </div>
@@ -129,8 +170,9 @@
   <section class="section section--alt" id="carta">
     <div class="container">
       <div class="section__head">
-        <h2>La Carta</h2>
-        <p>Carta completa en PDF.</p>
+        <span class="section__kicker">Nuestra cocina</span>
+        <h2>Carta de Casa Paco</h2>
+        <p>Descubre una cocina navarra honesta, pensada para disfrutar sin prisa.</p>
       </div>
 
       <div class="grid grid--2">
@@ -143,9 +185,7 @@
             <a class="btn btn--reserve" href="tel:+34948598074">Reservar</a>
           </div>
 
-          <div class="note">
-            <strong>Actualización rápida:</strong> 
-          </div>
+          <div class="note"><strong>Consejo:</strong> consulta disponibilidad y sugerencias de temporada al reservar.</div>
         </div>
 
         <div class="card card--preview">
@@ -163,72 +203,40 @@
   </section>
 
   <!-- MENÚS -->
-  <section class="section" id="menus">
+  <section class="section section--focus" id="menus">
     <div class="container">
       <div class="section__head">
-        <h2>Menús</h2>
-        <p>Imagen para verlo ya + PDF descargable.</p>
+        <span class="section__kicker">Cada ocasión</span>
+        <h2>Menús en el centro de Pamplona</h2>
+        <p>Consulta el menú del día y nuestra propuesta de fin de semana.</p>
       </div>
 
       <div class="grid grid--2">
         <article class="card card--menu">
           <div class="card__top">
-            <h3>Menú del día</h3>
+            <div><span class="menu-label">Entre semana</span><h3>Menú del día <strong class="menu-price">22 €</strong></h3></div>
             <div class="actions">
-              <a class="btn btn--small btn--primary" href="pdf/Menu_del_Dia_Casa_Paco_22.pdf" target="_blank" rel="noreferrer">PDF</a>
+              <a class="btn btn--small btn--primary" href="menudeldia.jpeg" target="_blank" rel="noreferrer">Ampliar</a>
               <a class="btn btn--small btn--reserve" href="tel:+34948598074">Reservar</a>
             </div>
           </div>
-          <img class="menuimg" src="img/menu-dia.jpg" alt="Menú del día Casa Paco" loading="lazy">
+          <a class="menuimg-link" href="menudeldia.jpeg" target="_blank" aria-label="Ampliar el menú del día">
+            <img class="menuimg" src="menudeldia.jpeg" alt="Menú del día de Casa Paco en Pamplona, 22 euros" loading="lazy">
+          </a>
         </article>
 
         <article class="card card--menu">
           <div class="card__top">
-            <h3>Menú fin de semana</h3>
+            <div><span class="menu-label">Sábados y domingos</span><h3>Fin de semana <strong class="menu-price">37 €</strong></h3></div>
             <div class="actions">
-              <a class="btn btn--small btn--primary" href="pdf/Menu_Fin_de_Semana_Casa_Paco_35.pdf" target="_blank" rel="noreferrer">PDF</a>
+              <a class="btn btn--small btn--primary" href="menufindesemana.jpeg" target="_blank" rel="noreferrer">Ampliar</a>
               <a class="btn btn--small btn--reserve" href="tel:+34948598074">Reservar</a>
             </div>
           </div>
-          <img class="menuimg" src="img/menu-fin.jpg" alt="Menú fin de semana Casa Paco" loading="lazy">
+          <a class="menuimg-link" href="menufindesemana.jpeg" target="_blank" aria-label="Ampliar el menú de fin de semana">
+            <img class="menuimg" src="menufindesemana.jpeg" alt="Menú de fin de semana de Casa Paco en Pamplona, 37 euros" loading="lazy">
+          </a>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- SAN FERMIN -->
-  <section class="section section--alt" id="sanfermin">
-    <div class="container">
-      <div class="section__head">
-        <h2>Almuerzo San Fermín</h2>
-        <p>Imagen oficial del almuerzo. Reserva por teléfono.</p>
-      </div>
-
-      <div class="grid grid--2">
-        <div class="card card--padded">
-          <h3>Reserva rápida</h3>
-          <p class="muted2">Para asegurar mesa: llama directamente.</p>
-
-          <div class="actions">
-            <a class="btn btn--reserve btn--glow" href="tel:+34948598074">Reservar</a>
-            <a class="btn btn--primary" href="https://padrearatosblog.github.io/sanfermin-casapaco/" target="_blank" rel="noreferrer">Ver menú y carta SF</a>
-            <a class="btn btn--call" href="#contacto">Ubicación</a>
-          </div>
-
-          <div class="note">
-            <strong>Consejo:</strong> en fechas de San Fermín, mejor reservar con antelación.
-          </div>
-        </div>
-
-        <div class="card card--menu">
-          <div class="card__top">
-            <h3>Imagen del almuerzo</h3>
-            <div class="actions">
-              <a class="btn btn--small btn--reserve" href="tel:+34948598074">Reservar</a>
-            </div>
-          </div>
-          <img class="menuimg" src="img/almuerzo-sanfermin.jpg" alt="Almuerzo San Fermín Casa Paco" loading="lazy">
-        </div>
       </div>
     </div>
   </section>
@@ -237,16 +245,17 @@
   <section class="section" id="galeria">
     <div class="container">
       <div class="section__head">
-        <h2>Galería</h2>
-        <p>Selección premium.</p>
+        <span class="section__kicker">El ambiente</span>
+        <h2>Casa Paco por dentro</h2>
+        <p>Un rincón cálido y elegante para comer, brindar y alargar la sobremesa.</p>
       </div>
 
       <div class="gallery">
-        <img src="img/gal-1.jpg" alt="Casa Paco - foto 1" loading="lazy">
-        <img src="img/gal-2.jpg" alt="Casa Paco - foto 2" loading="lazy">
-        <img src="img/gal-3.jpeg" alt="Casa Paco - foto 3" loading="lazy">
-        <img src="img/gal-4.jpg" alt="Casa Paco - foto 4" loading="lazy">
-        <img src="img/gal-5.jpg" alt="Casa Paco - foto 5" loading="lazy">
+        <img src="img/gal-1.jpg" alt="Interior del restaurante Casa Paco en Pamplona" loading="lazy">
+        <img src="img/gal-2.jpg" alt="Ambiente gastronómico de Casa Paco" loading="lazy">
+        <img src="img/gal-3.jpeg" alt="Plato de cocina navarra en Casa Paco" loading="lazy">
+        <img src="img/gal-4.jpg" alt="Comedor de Casa Paco Gastrobar" loading="lazy">
+        <img src="img/gal-5.jpg" alt="Experiencia gastronómica en el centro de Pamplona" loading="lazy">
       </div>
 
       <div class="cta-strip">
@@ -255,8 +264,8 @@
           <p>Reserva por teléfono en un clic.</p>
         </div>
         <div class="cta-strip__actions">
-          <a class="btn btn--primary" href="tel:+34948598074">Llamanos</a>
-          <a class="btn" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="btn btn--primary" href="tel:+34948598074">Llámanos</a>
+          <a class="btn btn--instagram" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noopener noreferrer"><svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1" class="icon-fill"/></svg><span>Ver Instagram</span></a>
         </div>
       </div>
     </div>
@@ -302,8 +311,9 @@
   <section class="section" id="contacto">
     <div class="container">
       <div class="section__head">
-        <h2>Contacto</h2>
-        <p>Reservas por teléfono. Estamos en pleno centro.</p>
+        <span class="section__kicker">Ven a conocernos</span>
+        <h2>Reservas y ubicación</h2>
+        <p>Estamos en pleno centro histórico de Pamplona. Reserva tu mesa por teléfono.</p>
       </div>
 
       <div class="grid grid--2">
@@ -314,7 +324,7 @@
 
           <div class="actions">
             <a class="btn btn--reserve btn--glow" href="tel:+34948598074">Reservar</a>
-            <a class="btn" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="btn btn--instagram" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noopener noreferrer"><svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1" class="icon-fill"/></svg><span>Seguir en Instagram</span></a>
           </div>
 
           <div class="hours">
@@ -345,20 +355,23 @@
   </section>
 
 <footer class="footer">
-  <div class="container footer__inner">
-
-    <div class="footer__brand">
-      <strong>© 2026 Casa Paco</strong>
-      <div class="muted">Pamplona · Navarra</div>
+  <div class="container footer__main">
+    <a class="footer__restaurant" href="#inicio" aria-label="Volver al inicio de Casa Paco">
+      <img src="img/logo.png" alt="Logo de Casa Paco" width="56" height="56">
+      <span><strong>Casa Paco</strong><small>Cocina navarra · Pamplona</small></span>
+    </a>
+    <div class="footer__contact">
+      <a href="tel:+34948598074">948 59 80 74</a>
+      <a class="footer-social" href="https://www.instagram.com/casapacogastrobar/" target="_blank" rel="noopener noreferrer"><svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1" class="icon-fill"/></svg><span>@casapacogastrobar</span></a>
     </div>
-
-    <div class="footer__credit">
-      <span class="muted">Web por</span>
-      <a class="credit-link" href="https://www.instagram.com/bryans_quiroz" target="_blank">
-        BAQ Studio
-      </a>
-    </div>
-
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 Casa Paco. Todos los derechos reservados.</span>
+    <a class="creator" href="https://www.instagram.com/bryans_quiroz/" target="_blank" rel="noopener noreferrer" aria-label="Diseño y desarrollo web por Quiroz. Ver Instagram de Bryan Quiroz">
+      <span class="creator__logo"><img src="img/logo-quiroz.svg" alt="Quiroz, diseño y desarrollo web"></span>
+      <span class="creator__copy"><small>Diseño y desarrollo web por</small><strong>Quiroz · @bryans_quiroz</strong></span>
+      <span class="creator__instagram" aria-hidden="true">Instagram ↗</span>
+    </a>
   </div>
 </footer>
 
