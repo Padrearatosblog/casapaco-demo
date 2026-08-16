@@ -91,3 +91,17 @@ if ("IntersectionObserver" in window && sections.length) {
 
   sections.forEach(section => observer.observe(section));
 }
+
+// El acceso flotante aparece al abandonar la portada, donde ya no compite con el CTA principal.
+const floatReserve = document.querySelector(".float-reserve");
+const hero = document.querySelector(".hero");
+
+if (floatReserve && hero && "IntersectionObserver" in window) {
+  const reserveObserver = new IntersectionObserver(([entry]) => {
+    floatReserve.classList.toggle("is-hidden", entry.intersectionRatio > .18);
+  }, { threshold: .18 });
+
+  reserveObserver.observe(hero);
+} else {
+  floatReserve?.classList.remove("is-hidden");
+}
