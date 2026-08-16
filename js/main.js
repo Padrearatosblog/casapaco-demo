@@ -1,4 +1,37 @@
-// Casa Paco - JS (solo menú móvil + UX)
+// Casa Paco - introducción, navegación móvil y mejoras de experiencia.
+const intro = document.getElementById("intro");
+const introSkip = document.getElementById("introSkip");
+
+if (intro && document.documentElement.classList.contains("intro-pending")) {
+  document.body.classList.add("intro-active");
+
+  let introClosed = false;
+  const closeIntro = () => {
+    if (introClosed) return;
+    introClosed = true;
+    intro.classList.add("is-leaving");
+
+    try {
+      sessionStorage.setItem("casaPacoIntroSeen", "true");
+    } catch (error) {}
+
+    window.setTimeout(() => {
+      document.documentElement.classList.remove("intro-pending");
+      document.body.classList.remove("intro-active");
+      intro.remove();
+    }, 720);
+  };
+
+  introSkip?.addEventListener("click", closeIntro);
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeIntro();
+  }, { once: true });
+  window.setTimeout(closeIntro, 2450);
+} else {
+  document.documentElement.classList.remove("intro-pending");
+  intro?.remove();
+}
+
 const burger = document.getElementById("burger");
 const mobile = document.getElementById("mobileMenu");
 
@@ -6,11 +39,13 @@ if (burger && mobile) {
   const openMenu = () => {
     mobile.style.display = "block";
     burger.setAttribute("aria-expanded", "true");
+    burger.setAttribute("aria-label", "Cerrar menú");
   };
 
   const closeMenu = () => {
     mobile.style.display = "none";
     burger.setAttribute("aria-expanded", "false");
+    burger.setAttribute("aria-label", "Abrir menú");
   };
 
   const toggle = () => {
